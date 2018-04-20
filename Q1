@@ -1,1 +1,19 @@
 # Separating the integer number's digits
+
+
+
+Var n = input ; 
+Var i = 0; 
+Var remainder = 0;
+
+
+remainder = n % 10;
+print remainder;
+
+while (n - remainder > 0)
+{
+ n= (n - remainder) / 10;
+remainder = n % 10 ; 
+print remainder; 
+} 
+
