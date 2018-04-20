@@ -1,1 +1,35 @@
 # Finding the proper coefficient of 7
+
+
+
+Var k = 1 ; 
+Var i = 0;
+Var j = 0; 
+
+Array c[5] = 0;
+
+for (j = 0, j<5, j++)
+{
+c[j] = (7 * k)% (j+2);
+}
+
+
+
+
+
+for (i = 0, i<5, i++)
+{
+
+
+if ( c[i] != 1)
+{
+k+=1;
+}
+
+print (7*k); 
+
+
+}
+
+
+
