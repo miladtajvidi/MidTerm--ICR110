@@ -1,1 +1,8 @@
-# Calculating Total Area of a Cylinder with r and h as base radius and height respectively.
+# Calculating Total Area of a Cylinder with r and h as base radius and height respectively(given as inputs).
+
+
+
+Var R = r ;
+Var H= h;
+Var area = (2*pi*R)*(R+H);
+print area; 
