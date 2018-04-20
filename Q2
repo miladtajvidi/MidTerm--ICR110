@@ -5,6 +5,7 @@
 Var k = 1 ; 
 Var i = 0;
 Var j = 0; 
+Var m =1 ; 
 
 Array c[5] = 0;
 
