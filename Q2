@@ -9,16 +9,20 @@ Var j = 0;
 Array c[5] = 0;
 
 # First initialization : we put remainders of (7*1) divided by 2,3,..., 6 in c[]
-# Process: We create a nested loop which 
-
-
-for (i = 0, i<5, i++)
-{
 
 for (j = 0, j<5, j++)
 {
 c[j] = (7 * k)% (j+2);
 }
+
+
+
+# Process: We create a nested loop which checks for the remainders; if it finds any non-1 remainder, it will increment k by one and continues.
+
+
+for (i = 0, i<5, i++)
+{
+
 
 if ( c[i] != 1)
 {
@@ -26,10 +30,14 @@ k+=1;
 i=0;
 }
 
-print (7*k); 
-
-
+for (j = 0, j<5, j++)
+{
+c[j] = (7 * k)% (j+2);
 }
 
+ 
+}
+
+print (7*k);
 
 
