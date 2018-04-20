@@ -8,22 +8,22 @@ Var j = 0;
 
 Array c[5] = 0;
 
-for (j = 0, j<5, j++)
-{
-c[j] = (7 * k)% (j+2);
-}
-
-
-
+# First initialization : we put remainders of (7*1) divided by 2,3,..., 6 in c[]
+# Process: We create a nested loop which 
 
 
 for (i = 0, i<5, i++)
 {
 
+for (j = 0, j<5, j++)
+{
+c[j] = (7 * k)% (j+2);
+}
 
 if ( c[i] != 1)
 {
 k+=1;
+i=0;
 }
 
 print (7*k); 
