@@ -4,19 +4,19 @@
 
 Var no1= bino;
 Var no2= 0;
-Var l = length (bino);
 Var i =0 ;
-Array c[] = sepfunc (no1); 
+Array c[] = sepfunc (no1);
+Var l = length (c); 
 # sepfunc is a function which separates all the digits of an integer and we put the output into an array sticking to the same order.
 # sepfunc can be called from what we have written for question 1
 
 
-for (i=0; i < length(c); i ++)
+for (i=0; i < l; i ++)
 {
 c[i] = (2^i)*c[i];
 }
 
-for (i=0; i < length(c); i ++)
+for (i=0; i < l; i ++)
 {
 no2+=c[i];
 }
