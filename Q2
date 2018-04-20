@@ -15,6 +15,14 @@ for (j = 0, j<5, j++)
 c[j] = (7 * k)% (j+2);
 }
 
+output of this loop // k is constant during the calculation. It is not useless.
+c[0] = 7%2 = 1
+c[1] = 7%3 = 1
+c[2] = 7%4 = 3
+c[3] = 7%5 = 4
+c[4] = 7%6 = 1
+
+
 
 
 # Process: We create a nested loop which checks for the remainders; if it finds any non-1 remainder, it will increment k by one and continues.
@@ -24,20 +32,21 @@ for (i = 0, i<5, i++)
 {
 
 
-if ( c[i] != 1)
+if ( c[i] != 1) // c[0] = 1, c[1] = 1, c[2] = 3,...
 {
-k+=1;
-i=0;
+k+=1; // k =2
+i=0; // i = 0
 }
 
 for (j = 0, j<5, j++)
 {
-c[j] = (7 * k)% (j+2);
+c[j] = (7 * k)% (j+2); // c[0] = 7%2 = 1,c[1] = 7%3 = 1, c[2] = 7%4 = 3,
 }
 
  
 }
 
+// it will not print the result
 print (7*k);
 
 
