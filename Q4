@@ -8,7 +8,7 @@ Var l = length (bino);
 Var i =0 ;
 Array c[] = sepfunc (no1); 
 # sepfunc is a function which separates all the digits of an integer and we put the output into an array sticking to the same order.
-# sepfunc can be called from what we have written for question 2
+# sepfunc can be called from what we have written for question 1
 
 
 for (i=0; i < length(c); i ++)
